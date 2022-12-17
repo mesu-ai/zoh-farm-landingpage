@@ -33,9 +33,8 @@ nav {
   
 
   .signup-button {
-    @include button-style(white,#f1f8e9);
+    @include button-style(transparent, white,#f1f8e9);
   }
-
   .responsive-menubar-button {
     display: block;
     z-index: 100;
@@ -56,7 +55,7 @@ nav {
     padding: 10px;
 
     .res-signup-button{
-      @include button-style(red,red)
+      @include button-style(transparent,red,red)
 
     }
     

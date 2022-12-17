@@ -1,3 +1,40 @@
+@import './_variables';
+@import './common-styles.scss';
+
+
+// container responsiveness
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-left: calc(50vw - 375px);
+    margin-right: calc(50vw - 375px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    margin-left: calc(50vw - 485px);
+    margin-right: calc(50vw - 485px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin-left: calc(50vw - 585px);
+    margin-right: calc(50vw - 585px);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    margin-left: calc(50vw - 650px);
+    margin-right: calc(50vw - 650px);
+  }
+}
+
+
+
+// header style
 @media only screen and (min-width: 768px) {
   #header .desktop-menubar {
     display: block;
@@ -8,4 +45,33 @@
   #header .responsive-navbar {
     display: none;
   }
+}
+
+
+
+
+// banner style
+@media only screen and (max-width:992px) {
+  #banner .banner-title{
+    @include title-style(24px,rgb(19, 4, 4),bold);
+  }
+  #banner .banner-text{
+    font-size: 16px;
+  }
+  
+}
+
+@media only screen and (max-width:768px) {
+
+  #banner .banner-description{
+   margin-top: 100px;
+  }
+
+  #banner .banner-title{
+    @include title-style(22px,rgb(19, 4, 4),bold);
+  }
+  #banner .banner-text{
+    font-size: 16px;
+  }
+  
 }

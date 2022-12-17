@@ -1,0 +1,37 @@
+@import '../../styles/common-styles.scss';
+@import '../../styles/responsive.scss';
+
+
+#banner .banner-container{
+  // @include h-centered(start);
+  
+  // height: 100vh;
+  // width: 50vw;
+
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  gap: 10px;
+
+  
+}
+
+#banner .banner-description{
+  @include my-auto;
+}
+
+#banner .invest-btn{
+  @include button-style(#66BB6A,white,#66BB6A);
+  padding: 10px 20px 10px 20px;
+}
+
+#banner .banner-title{
+  @include title-style(46px,black,bold);
+}
+
+#banner .banner-text{
+  font-size: 18px;
+}
