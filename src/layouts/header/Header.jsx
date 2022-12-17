@@ -53,7 +53,7 @@ const Header = () => {
             {navRoutes.map((route) => (
               <li key={route.id}>{route?.name}</li>
             ))}
-            <li className='signup-button' style={{display:'inline-block'}}> Sign Up</li>
+            <li className='signup-button' style={{display:'inline-block', color:'red', border:'1px solid red'}}> Sign Up</li>
           </div>
         )}
 
