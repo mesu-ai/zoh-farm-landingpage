@@ -121,10 +121,20 @@
 // how-To-Work style
 
 #howToWork {
-  position: relative;
+  // background-image: url('../../assets/images/how-to-work-bg.svg');
+  // background-repeat: no-repeat;
+  // height: 100vh;
+  // position: relative;
+
+  .how-it-work-container {
+    background-image: url('../../assets/images/how-to-work-bg.svg');
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    position: relative;
+  }
 
   .how-to-work-info {
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -153,14 +163,9 @@
       }
       .step-connector {
         content: '';
-
-        // position: relative;
-        // top: 1.5rem;
-        // left: 50%;
-        width: 120px;
+        width: 10vw;
         height: 1px;
         background-color: white;
-        // order: -1;
       }
     }
 
@@ -178,5 +183,15 @@
         margin: 0px;
       }
     }
+
+    @media only screen and (max-width: 768px) {
+      .how-work-stepper-des {
+       @include grid-cols-divided(1, 1fr);
+    
+    }
+    }
+
   }
+
 }
+

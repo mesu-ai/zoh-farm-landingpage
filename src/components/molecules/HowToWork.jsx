@@ -1,15 +1,18 @@
 import React from 'react';
 import howToWorkBg from '../../assets/images/how-to-work-bg.svg';
+import './styles.scss';
+import '../../styles/responsive.scss';
+
 
 const HowToWork = () => {
   return (
     <div id='howToWork'>
-      <div className='container'>
-        <img
+      <div className='container how-it-work-container'>
+        {/* <img
           width='100%'
           src={howToWorkBg}
           alt='how_to_work'
-        />
+        /> */}
 
         <div className='how-to-work-info'>
           <h6 className='how-work-title'>How it works</h6>

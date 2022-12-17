@@ -91,3 +91,14 @@
 
 }
 
+// how-it-work style
+@media only screen and (max-width: 768px) {
+ 
+   .how-work-stepper-des {
+    @include grid-cols-divided(1, 1fr);
+
+}
+}
+
+
+
