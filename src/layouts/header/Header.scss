@@ -1,0 +1,52 @@
+@import '../../styles/common-styles.scss';
+@import '../../styles/responsive.scss';
+
+nav { 
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0px;
+
+    @include h-centered;
+    justify-content: space-between;
+    gap: 6rem;
+
+    .desktop-menubar {
+      display: none;
+      width: 100%;
+
+      .menu-container {
+        width: 100%;
+        @include h-centered;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .nav-item {
+          @include h-centered;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+
+  .responsive-menubar-button {
+    display: block;
+  }
+
+  .signup-button {
+    border: 1px solid #f1f8e9;
+    color: rgb(63, 7, 7);
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  .responsive-navbar {
+    // @include v-centered;
+    gap: 5px;
+    list-style-type: none;
+    background-color: antiquewhite;
+
+    
+  }
+}
