@@ -1,6 +1,6 @@
 import React from 'react';
 import banner from '../../assets/images/banner.png';
-import './Banner.scss';
+import './styles.scss';
 import '../../styles/responsive.scss';
 
 const Banner = () => {
@@ -19,7 +19,8 @@ const Banner = () => {
       </div>
       <img
         // style={{ position: 'absolute', top: 0, right: 0, width: '50vw' }}
-        style={{width:'50vw',position: 'absolute', top: 0, right: 0,}}
+        // style={{width:'50vw',position: 'absolute', top: 0, right: 0,}}
+        style={{width:'100%'}}
         src={banner}
         alt=''
       />

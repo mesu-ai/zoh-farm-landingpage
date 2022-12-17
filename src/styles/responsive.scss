@@ -52,6 +52,7 @@
   #banner .banner-text {
     font-size: 16px;
   }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -69,3 +70,15 @@
     font-size: 16px;
   }
 }
+
+
+// opportunity style
+@media only screen and (max-width: 768px) {
+  #opportunity .opp-card-container{
+    padding-top: 40px;
+    @include grid-cols-divided(1,1fr);
+    gap: 20px;
+  }
+
+}
+

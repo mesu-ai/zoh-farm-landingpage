@@ -1,0 +1,74 @@
+@import '../../styles/common-styles.scss';
+@import '../../styles/responsive.scss';
+
+// Banner style
+#banner {
+  .banner-container {
+    @include grid-cols-divided(2, 1fr);
+  }
+
+  .banner-description {
+    @include my-auto;
+  }
+
+  .banner-title {
+    @include title-style(46px, black, bold);
+    margin-bottom: 50px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+  }
+
+  .invest-btn {
+    @include button-style(#66bb6a, white, #66bb6a);
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+// Opportunity style
+
+#opportunity {
+  .oppopportunity-container {
+    // padding-top: 300px;
+    @include v-centered(center);
+  }
+
+  .oppopportunity-title {
+    @include title-style(46px, black, bold);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .opp-card-container {
+    // @include h-centered(center);
+    padding-top: 40px;
+    @include grid-cols-divided(3, 1fr);
+    gap: 20px;
+  }
+
+  .opp-card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+
+    .opp-card-title {
+      padding-top: 15px;
+      @include title-style(18px, black, bold);
+    }
+  }
+
+  .opp-card:hover {
+    background-color:#66bb6a;
+
+    .opp-card-title {
+      @include title-style(18px, white, bold);
+    }
+
+    .opp-card-text{
+      color: white;
+    }
+  }
+
+ 
+}
