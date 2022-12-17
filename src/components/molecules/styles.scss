@@ -94,10 +94,16 @@
       top: 0;
       padding: 30px;
 
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+
       .con-h-title{
         color: #66bb6a;
 
       }
+      
       .con-title{
         @include title-style(22px,white,bold);
         width: 200px;
@@ -109,7 +115,9 @@
 
       }
       .con-button{
+
         @include button-style(white,#66bb6a,white);
+        margin-top: 20px;
         border-radius: 2px;
         padding: 8px 20px 8px 20px;
 

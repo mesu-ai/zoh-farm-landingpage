@@ -46,7 +46,9 @@ const Convenience = () => {
           />
           <div className='convenience-info'>
             <p className='con-h-title'>{item.highlightTitle}</p>
-            <p>fffffddddd</p>
+            <p style={{width:'50px'}}>
+              <hr/>
+            </p>
             <p className='con-title'>{item.title}</p>
             <p className='con-s-des'>{item.shordescription}</p>
             <button className='con-button'>{item.buttonTitle}</button>
