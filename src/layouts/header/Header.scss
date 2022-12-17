@@ -42,10 +42,17 @@ nav {
   }
 
   .responsive-navbar {
-    // @include v-centered;
-    gap: 5px;
+    @include v-centered;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
     list-style-type: none;
-    background-color: antiquewhite;
+    background-color: azure;
+    padding: 10px;
 
     
   }

@@ -47,14 +47,19 @@ const Header = () => {
           </button>
         </ul>
 
+        <div style={{position:'relative'}}>
         {open && (
           <div className='responsive-navbar'>
             {navRoutes.map((route) => (
               <li key={route.id}>{route?.name}</li>
             ))}
-            <li className='signup-button'> Sign Up</li>
+            <li className='signup-button' style={{display:'inline-block'}}> Sign Up</li>
           </div>
         )}
+
+        </div>
+
+        
       </nav>
     </header>
   );
