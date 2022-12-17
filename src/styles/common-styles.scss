@@ -35,7 +35,7 @@
   grid-template-columns:repeat($col,$size);
   gap: 10px;
 }
-@mixin button-style ($bg-color, $color,$border-color,) {
+@mixin button-style ($bg-color, $color,$border-color) {
   z-index: 100;
   background-color: $bg-color;
   color: $color;

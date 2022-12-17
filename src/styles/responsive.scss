@@ -82,3 +82,12 @@
 
 }
 
+// convenience style
+@media only screen and (max-width: 768px) {
+  #convenience .convenience-card-container{
+    @include grid-cols-divided(1, 1fr);
+
+  }
+
+}
+

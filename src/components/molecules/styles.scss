@@ -69,6 +69,55 @@
       color: white;
     }
   }
-
  
+}
+
+// convenience style
+
+#convenience {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .convenience-title{
+    @include title-style(32px, black, bold);
+  }
+  .convenience-card-container{
+    margin-top: 50px;
+    @include grid-cols-divided(2, 1fr);
+
+  }
+
+  .convenience-card{
+    position: relative;
+
+    .convenience-info{
+      position: absolute;
+      top: 0;
+      padding: 30px;
+
+      .con-h-title{
+        color: #66bb6a;
+
+      }
+      .con-title{
+        @include title-style(22px,white,bold);
+        width: 200px;
+
+      }
+      .con-s-des{
+        width: 350px;
+        color: #E2EFD2;
+
+      }
+      .con-button{
+        @include button-style(white,#66bb6a,white);
+        border-radius: 2px;
+        padding: 8px 20px 8px 20px;
+
+      }
+
+
+    }
+
+  }
+  
 }
