@@ -30,7 +30,7 @@
 
 #opportunity {
   .oppopportunity-container {
-    // padding-top: 300px;
+    padding: 0px 60px 0px 60px;
     @include v-centered(center);
   }
 
@@ -59,37 +59,34 @@
   }
 
   .opp-card:hover {
-    background-color:#66bb6a;
+    background-color: #66bb6a;
 
     .opp-card-title {
       @include title-style(18px, white, bold);
     }
 
-    .opp-card-text{
+    .opp-card-text {
       color: white;
     }
   }
- 
 }
 
 // convenience style
 
 #convenience {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  .convenience-title{
+  padding: 50px 70px 50px 70px;
+  .convenience-title {
     @include title-style(32px, black, bold);
   }
-  .convenience-card-container{
+  .convenience-card-container {
     margin-top: 50px;
     @include grid-cols-divided(2, 1fr);
-
   }
 
-  .convenience-card{
+  .convenience-card {
     position: relative;
 
-    .convenience-info{
+    .convenience-info {
       position: absolute;
       top: 0;
       padding: 30px;
@@ -99,33 +96,87 @@
       align-items: flex-start;
       flex-direction: column;
 
-      .con-h-title{
+      .con-h-title {
         color: #66bb6a;
-
       }
-      
-      .con-title{
-        @include title-style(22px,white,bold);
+
+      .con-title {
+        @include title-style(22px, white, bold);
         width: 200px;
-
       }
-      .con-s-des{
+      .con-s-des {
         width: 350px;
-        color: #E2EFD2;
-
+        color: #e2efd2;
       }
-      .con-button{
-
-        @include button-style(white,#66bb6a,white);
+      .con-button {
+        @include button-style(white, #66bb6a, white);
         margin-top: 20px;
         border-radius: 2px;
         padding: 8px 20px 8px 20px;
-
       }
+    }
+  }
+}
 
+// how-To-Work style
 
+#howToWork {
+  position: relative;
+
+  .how-to-work-info {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    // width: 100%;
+
+    .how-work-title {
+      @include title-style(30px, white, bold);
+      text-align: center;
+    }
+    .how-work-des {
+      color: white;
+      font-size: 18px;
+    }
+    .how-work-stepper {
+      padding: 30px 30px;
+      @include h-centered(center);
+
+      .step-item {
+        border: 1px solid white;
+        padding: 15px 18px;
+        border-radius: 50%;
+        color: white;
+      }
+      .step-connector {
+        content: '';
+
+        // position: relative;
+        // top: 1.5rem;
+        // left: 50%;
+        width: 120px;
+        height: 1px;
+        background-color: white;
+        // order: -1;
+      }
     }
 
+    .how-work-stepper-des {
+      @include grid-cols-divided(2, 1fr);
+      color: white;
+      text-align: start;
+
+      .stepper-des-title {
+        @include title-style(20px, white, bold);
+        width: 300px;
+      }
+      .stepper-des-description {
+        font-size: 16px;
+        margin: 0px;
+      }
+    }
   }
-  
 }

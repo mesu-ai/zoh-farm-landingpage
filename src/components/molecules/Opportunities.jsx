@@ -1,6 +1,7 @@
 import React from 'react';
 import farmer from '../../assets/images/farmer.svg';
 import group from '../../assets/images/group.svg';
+import invest from '../../assets/images/invest.svg';
 
 import './styles.scss';
 // import '../../styles/responsive.scss';
@@ -22,7 +23,7 @@ const opportunitiesDate = [
   },
   {
     id: 2,
-    image: group,
+    image: invest,
     title: 'Social Impact Invesment',
     description:
       'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque ',
@@ -30,7 +31,6 @@ const opportunitiesDate = [
 ];
 
 const Opportunities = () => {
-  
   return (
     <div
       id='opportunity'
@@ -59,6 +59,15 @@ const Opportunities = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div style={{ paddingRight: '60px', paddingLeft: '60px' }}>
+        <hr
+          style={{
+            marginTop: '60px',
+            background: '#F7F7F7',
+            border: '1px solid #F7F7F7',
+          }}
+        />
       </div>
     </div>
   );
