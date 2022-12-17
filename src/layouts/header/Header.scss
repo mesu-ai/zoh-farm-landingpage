@@ -8,8 +8,7 @@ nav {
     list-style-type: none;
     padding-left: 0px;
 
-    @include h-centered;
-    justify-content: space-between;
+    @include h-centered (space-between);
     gap: 6rem;
 
 
@@ -19,12 +18,11 @@ nav {
 
       .menu-container {
         width: 100%;
-        @include h-centered;
-        justify-content: space-between;
+        @include h-centered (space-between);
         gap: 1rem;
 
         .nav-item {
-          @include h-centered;
+          @include h-centered (inherit);
           gap: 1rem;
           z-index: 100;
         }
@@ -35,12 +33,7 @@ nav {
   
 
   .signup-button {
-    z-index: 100;
-    border: 1px solid #f1f8e9;
-    color: white;
-    padding: 5px 10px 5px 10px;
-    border-radius: 8px;
-    background-color: transparent;
+    @include button-style(white,#f1f8e9);
   }
 
   .responsive-menubar-button {
@@ -50,8 +43,7 @@ nav {
 
   .responsive-navbar {
     z-index: 100;
-    @include v-centered;
-    justify-content: center;
+    @include v-centered (center);
     gap: 20px;
     position: absolute;
     top: 0;
@@ -63,6 +55,10 @@ nav {
     background-color: azure;
     padding: 10px;
 
+    .res-signup-button{
+      @include button-style(red,red)
+
+    }
     
   }
 }
