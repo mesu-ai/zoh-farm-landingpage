@@ -29,6 +29,12 @@
     margin-right: auto;
 }
 
+@mixin grid-cols-divided($col,$size){
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat($col,$size);
+  gap: 10px;
+}
 @mixin button-style ($bg-color, $color,$border-color,) {
   z-index: 100;
   background-color: $bg-color;

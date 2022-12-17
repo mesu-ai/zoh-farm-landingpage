@@ -1,7 +1,6 @@
 @import './_variables';
 @import './common-styles.scss';
 
-
 // container responsiveness
 
 @media only screen and (min-width: 768px) {
@@ -32,8 +31,6 @@
   }
 }
 
-
-
 // header style
 @media only screen and (min-width: 768px) {
   #header .desktop-menubar {
@@ -47,31 +44,28 @@
   }
 }
 
-
-
-
 // banner style
-@media only screen and (max-width:992px) {
-  #banner .banner-title{
-    @include title-style(24px,rgb(19, 4, 4),bold);
+@media only screen and (max-width: 992px) {
+  #banner .banner-title {
+    @include title-style(24px, rgb(19, 4, 4), bold);
   }
-  #banner .banner-text{
+  #banner .banner-text {
     font-size: 16px;
   }
-  
 }
 
-@media only screen and (max-width:768px) {
-
+@media only screen and (max-width: 500px) {
+  #banner .banner-container {
+    @include grid-cols-divided(1, 1fr);
+  }
   #banner .banner-description{
-   margin-top: 100px;
+    margin-top: 100px
   }
 
-  #banner .banner-title{
-    @include title-style(22px,rgb(19, 4, 4),bold);
+  #banner .banner-title {
+    @include title-style(22px, rgb(19, 4, 4), bold);
   }
-  #banner .banner-text{
+  #banner .banner-text {
     font-size: 16px;
   }
-  
 }

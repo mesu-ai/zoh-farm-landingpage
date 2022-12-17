@@ -3,8 +3,12 @@ import Banner from '../../components/molecules/Banner';
 
 const Home = () => {
   return (
-    <div>
+    <div style={{}}>
       <Banner/> 
+      <div >
+        djdjd
+
+      </div>
     </div>
   );
 };

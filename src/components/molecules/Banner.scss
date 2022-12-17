@@ -3,18 +3,8 @@
 
 
 #banner .banner-container{
-  // @include h-centered(start);
-  
-  // height: 100vh;
-  // width: 50vw;
 
-  position: absolute;
-  top: 0;
-
-  width: 100%;
-  display: grid;
-  grid-template-columns:repeat(2,1fr);
-  gap: 10px;
+  @include grid-cols-divided(2,1fr)
 
   
 }

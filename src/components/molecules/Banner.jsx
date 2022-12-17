@@ -19,7 +19,7 @@ const Banner = () => {
       </div>
       <img
         // style={{ position: 'absolute', top: 0, right: 0, width: '50vw' }}
-        style={{width:'100%'}}
+        style={{width:'50vw',position: 'absolute', top: 0, right: 0,}}
         src={banner}
         alt=''
       />
